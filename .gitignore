@@ -4,4 +4,3 @@ orig
 exp
 script
 *.gem
-ext/tx_swig_wrap.cxx
