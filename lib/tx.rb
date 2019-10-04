@@ -50,19 +50,19 @@ module Tx  #:nodoc: all
         else
           
           def default_encoding
-            return nil
+            Encoding::UTF_8
           end
           
           def add_encoding(obj)
-            return obj
+            obj
           end
           
           def to_binary(str)
-            return str
+            str
           end
           
           def bytesize(str)
-            return str.length
+            str.length
           end
           
         end
