@@ -301,6 +301,12 @@ module Tx
           yield(key, pos, value)
         end
         
+        # Adds multiple key/value pairs to the index.
+        #
+        # e.g. <tt>builder.add_all(["key1", "value1", "key2", "value2"])</tt>
+        def multiple_add(words)
+          Builder.new.add_all(words)
+        end
     end
     
 end
